@@ -10,7 +10,7 @@ book = ['Candide by Voltaire', 'Norwegian Wood by Haruki Murakami', 'The Inventi
 'Big Sur by Jack Kerouac', 'Ensayo sobre la Ceguera by José Saramago']
 
 function getRandomElement(list) {
-    let length = list.length();
+    let length = list.length;
     let randomNumber = Math.floor(Math.random()) * length;
     return list[randomNumber];
 };
