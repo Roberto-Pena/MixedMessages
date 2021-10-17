@@ -11,7 +11,7 @@ book = ['Candide by Voltaire', 'Norwegian Wood by Haruki Murakami', 'The Inventi
 
 function getRandomElement(list) {
     let length = list.length;
-    let randomNumber = Math.floor(Math.random()) * length;
+    let randomNumber = Math.floor(Math.random() * length);
     return list[randomNumber];
 };
 
