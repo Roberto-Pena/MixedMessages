@@ -9,4 +9,14 @@ song = ["Babe I'm Gonna Leave You by Led Zeppelin", 'White Ferrari by Frank Ocea
 book = ['Candide by Voltaire', 'Norwegian Wood by Haruki Murakami', 'The Invention of Morel by Adolfo Bioy Casares', 'Ficciones by Jorge Luis Borges', 
 'Big Sur by Jack Kerouac', 'Ensayo sobre la Ceguera by José Saramago']
 
+function getRandomElement(list) {
+    let length = list.length();
+    let randomNumber = Math.floor(Math.random()) * length;
+    return list[randomNumber];
+};
+
+finalMessage = `Ok, so today your're going to watch ${getRandomElement(movie)}, I reccommend you reading ${getRandomElement(book)} and pairing 
+it putting it all together by listening to ${getRandomElement(song)}. What do you think? let us know in the comments.`;
+
+console.log(finalMessage);
 
